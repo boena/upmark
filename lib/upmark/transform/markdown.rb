@@ -39,12 +39,12 @@ module Upmark
       end
 
       element(:p)  {|element| "#{text(element)}\n\n" }
-      element(:h1) {|element| "# #{text(element)}" }
-      element(:h2) {|element| "## #{text(element)}" }
-      element(:h3) {|element| "### #{text(element)}" }
-      element(:h4) {|element| "#### #{text(element)}" }
-      element(:h5) {|element| "##### #{text(element)}" }
-      element(:h6) {|element| "###### #{text(element)}" }
+      element(:h1) {|element| "# #{text(element)}\n" }
+      element(:h2) {|element| "## #{text(element)}\n" }
+      element(:h3) {|element| "### #{text(element)}\n" }
+      element(:h4) {|element| "#### #{text(element)}\n" }
+      element(:h5) {|element| "##### #{text(element)}\n" }
+      element(:h6) {|element| "###### #{text(element)}\n" }
       element(:li) {|element| "#{text(element)}" }
 
       element(:ul) do |element|

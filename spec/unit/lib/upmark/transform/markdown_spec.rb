@@ -14,6 +14,27 @@ RSpec.describe Upmark::Transform::Markdown do
       end
     end
 
+    context "<h1>" do
+      let(:ast) do
+        [
+          {
+            element: {
+              name: "h1",
+              attributes: [],
+              children: [{text: "heading test"}],
+              ignore: false
+            }
+          }
+        ]
+      end
+
+      it 'transforms to correct markdown' do
+        expect(
+          transformed_ast
+        ).to eq(["# heading test\n"])
+      end
+    end
+
     context "<p>" do
       context "single tag" do
         let(:ast) do

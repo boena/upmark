@@ -216,11 +216,17 @@ Something else
       HTML
       ).to convert_to <<-MD.strip
 # messenger bag skateboard
+
 ## messenger bag skateboard
+
 ### messenger bag skateboard
+
 #### messenger bag skateboard
+
 ##### messenger bag skateboard
+
 ###### messenger bag skateboard
+
       MD
     end
   end
